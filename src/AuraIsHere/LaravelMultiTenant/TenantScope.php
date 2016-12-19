@@ -5,9 +5,9 @@ namespace AuraIsHere\LaravelMultiTenant;
 use AuraIsHere\LaravelMultiTenant\Exceptions\TenantColumnUnknownException;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\ScopeInterface;
+use Illuminate\Database\Eloquent\Scope;
 
-class TenantScope implements ScopeInterface
+class TenantScope implements Scope
 {
     private $enabled = true;
 
